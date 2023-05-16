@@ -43,7 +43,6 @@ RUN apt install webmin -y
 #RUN echo "ProxyPass /webmin http://localhost:10000/" >> /etc/apache2/apache2.conf
 
 # Set Webmin login details using environment variables
-ENV WEBMIN_USER=root
 ENV WEBMIN_PASS=admin
 
 # Expose ports
