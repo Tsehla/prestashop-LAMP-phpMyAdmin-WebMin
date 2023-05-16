@@ -77,6 +77,10 @@ after installing prestashop and before accessing webmin do :
 
 
 
+> Dockerfile github repository
+    https://github.com/Tsehla/prestashop-LAMP-phpMyAdmin-WebMin
+
+
 
 
 
