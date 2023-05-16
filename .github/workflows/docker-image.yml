@@ -49,4 +49,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: tsehla/prestashop
+          tags: tsehla/prestashop:latest
