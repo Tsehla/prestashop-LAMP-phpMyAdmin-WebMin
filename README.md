@@ -47,6 +47,18 @@ docker build -t prestashop:1.7.8.9 .
 
 
 -> prestashop install configuration<br>
+database link
+```
+127.0.0.1
+```
+database user
+```
+psuser
+```
+database password
+```
+admin
+```
 after installing prestashop and before accessing webmin do :<br>
 
 - run to remove install folder
