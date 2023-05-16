@@ -75,6 +75,44 @@ after installing prestashop and before accessing webmin do :<br>
     prestashop-theme/<br><br>
 
 
+-> docker commands<br>
+    -- see all active docker containers<br>
+    docker ps -a <br><br>
+
+    -- stop docker containe of Container-ID<br>
+    docker stop Container-ID<br><br>
+
+    -- start docker of Container-ID<br>
+    docker start Container-ID<br><br>
+
+    -- remove container of Container-ID<br>
+    docker rm Container-ID<br><br>
+
+    -- see all images<br>
+    docker images<br><br>
+
+    -- remove image of Image-ID<br>
+    docker rmi Image-ID<br><br>
+
+    -- force remove image of Image-ID<br>
+    docker rmi -f Image-ID<br><br>
+
+    -- build image from docker file in current directory<br>
+    docker build -t .<br><br>
+
+    -- build image from docker file in current directory with image name Image-Name<br>
+    docker build -t Image-Name .<br>
+
+    -- run image of Image-Name on port 80 of server and link it to port 81 of a service in docker container/image<br>
+    docker run -p 80:81 Image-Name<br><br>
+
+    -- run image of Image-Name on port 80 of server and link it to port 81 of a service in docker container/image, give container name of Container-Name<br>
+    docker run -p 80:81 --name Container-Name Image-Name<br><br>
+
+    -- run image of Image-Name on port 80 of server and link it to port 81 of a service in docker container/image, give container name of Container-Name, and have docker process/console detached<br>
+    docker run -d -p 80:81 --name Container-Name Image-Name<br><br>
+
+
 -> Dockerfile github repository<br>
     https://github.com/Tsehla/prestashop-LAMP-phpMyAdmin-WebMin<br>
 
