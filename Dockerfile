@@ -43,7 +43,7 @@ RUN apt install webmin -y
 #RUN echo "ProxyPass /webmin http://localhost:10000/" >> /etc/apache2/apache2.conf
 
 # Set Webmin login details using environment variables
-ENV WEBMIN_USER=root
+# ENV WEBMIN_USER=psuser
 ENV WEBMIN_PASS=admin
 
 # Expose ports
@@ -54,5 +54,5 @@ EXPOSE 10000
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Start Apache, MariaDB, and Webmin
-CMD echo "root:${WEBMIN_PASS}" | chpasswd && echo "psuser:${WEBMIN_PASS}" | chpasswd  && service apache2 start && service mariadb start && service webmin start && apt-get autoremove -y && sleep infinity
+CMD echo "root:${WEBMIN_PASS}"  && service apache2 start && service mariadb start && service webmin start && apt-get autoremove -y && sleep infinity
 
